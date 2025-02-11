@@ -16,7 +16,7 @@ importers:
         version: 2.3.6(@types/node@22.13.1)(jiti@2.4.2)(rollup@4.34.2)(typescript@5.7.3)(yaml@2.5.1)
       astro-purgecss:
         specifier: ^5.0.0
-        version: 5.1.0(astro@5.2.5(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.28.2)(rollup@4.34.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.5.1))(purgecss@5.0.0)
+        version: 5.2.0(astro@5.2.5(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.28.2)(rollup@4.34.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.5.1))(purgecss@5.0.0)
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.0
@@ -962,8 +962,8 @@ packages:
     resolution: {integrity: sha512-AGsGgcg7Jg9UpyCDgvl/EkdYpe1oMkFdmC2Zl+KWneoieLCtQIFjmcY8yt41gcNx4mby0w8BBJQcBmPuf8UAoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro-purgecss@5.1.0:
-    resolution: {integrity: sha512-RMfdofaWFwStrs205hKAwU1FOkyVTW65R4ubrJV9BEQgUxpfIhiFEiZuOGhOzFTxkJjVbIeuhmLdm29tLEJwCQ==}
+  astro-purgecss@5.2.0:
+    resolution: {integrity: sha512-w6AUbzodr6F3LKeXl2QxbPDE2fE3/uShxkka0tMY1AVHLuOwNTXk2kw0XDnr8GIsF+ZBgZzw2/Vl2EEg5/vB+Q==}
     peerDependencies:
       astro: ^5.0.0
       purgecss: ^7.0.0
@@ -2406,6 +2406,10 @@ packages:
 
   postcss@8.5.1:
     resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.5.2:
+    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
     engines: {node: ^10 || ^12 || >=14}
 
   preferred-pm@4.1.1:
@@ -4208,7 +4212,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro-purgecss@5.1.0(astro@5.2.5(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.28.2)(rollup@4.34.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.5.1))(purgecss@5.0.0):
+  astro-purgecss@5.2.0(astro@5.2.5(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.28.2)(rollup@4.34.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.5.1))(purgecss@5.0.0):
     dependencies:
       astro: 5.2.5(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.28.2)(rollup@4.34.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.5.1)
       purgecss: 5.0.0
@@ -5962,6 +5966,12 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  postcss@8.5.2:
+    dependencies:
+      nanoid: 3.3.8
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
   preferred-pm@4.1.1:
     dependencies:
       find-up-simple: 1.0.0
@@ -5996,7 +6006,7 @@ snapshots:
     dependencies:
       commander: 9.5.0
       glob: 8.1.0
-      postcss: 8.5.1
+      postcss: 8.5.2
       postcss-selector-parser: 6.1.2
 
   queue-microtask@1.2.3: {}
